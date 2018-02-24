@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                Type
+            </th>
+            <th>
+                Number
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @vehicles.each do |vehicle| %>
+            <tr>
+                <td> <%= vehicle.type %> </td>
+                <td> <%= vehicle.number %> </td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
